@@ -1,0 +1,68 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "SF Pro", sans-serif;
+    font-size: 11px;
+    /* Anpassa fontstorleken efter behov */
+}
+
+header {
+    background-color: #303030;
+    color: #c4c4c4;
+    padding: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Placera headern över andra innehåll */
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        display: none;
+        /* Dölj menyn när skärmen är mindre än 768px */
+    }
+
+    .hamburger-menu {
+        display: block;
+        /* Visa hamburgermenyn när skärmen är mindre än 768px */
+    }
+}
+
+main {
+    padding-top: 80px;
+    /* Anpassa topputfyllnaden beroende på headerhöjd */
+    text-align: center;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
