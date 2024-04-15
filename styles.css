@@ -1,54 +1,90 @@
+/* Återställ standardstil för HTML och body */
 body,
 html {
     margin: 0;
     padding: 0;
     font-family: "SF Pro", sans-serif;
     font-size: 11px;
-    /* Anpassa fontstorleken efter behov */
+    /* Grundläggande fontstorlek */
 }
 
+/* Grundläggande stil för header */
 header {
-    background-color: #303030;
+    background-color: #474747;
     color: #c4c4c4;
-    padding: 12px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    /* Placera headern över andra innehåll */
-}
-
-.menu-container {
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.hamburger-menu {
-    display: none;
+/* Stil för menyraden */
+.menu-icons,
+.menu-container {
+    display: flex;
+    align-items: center;
 }
 
+/* Stil för text i meny */
+.menu-container p {
+    margin-right: 4vw;
+    /* Använd vw för relativt avstånd */
+}
+
+/* Stil för ikoner i meny */
+.menu-icons i {
+    margin-right: 1vw;
+    /* Använd vw för relativt avstånd */
+}
+
+/* Stil för hamburgermeny */
+.hamburger-menu {
+    display: none;
+    /* Dölj hamburgermenyn som standard */
+}
+
+/* Stil för label (hamburger-ikonen) */
 label {
     cursor: pointer;
     color: #fff;
-    font-size: 24px;
+    font-size: 15px;
 }
 
+/* Mediaförfrågan för mindre skärmar */
 @media (max-width: 768px) {
-    .menu-container {
-        display: none;
-        /* Dölj menyn när skärmen är mindre än 768px */
-    }
 
+    /* Visa hamburgermeny när skärmen är mindre än 768px */
     .hamburger-menu {
         display: block;
-        /* Visa hamburgermenyn när skärmen är mindre än 768px */
+        /* Visa hamburgermeny på mindre skärmar */
+    }
+
+    /* Dölj textmenyn när hamburgermenyn visas */
+    .menu-container {
+        display: none;
+    }
+
+    /* Justera header layout för mindre skärmar */
+    header {
+        justify-content: space-between;
+        /* Placera element till vänster och höger */
+    }
+
+    /* Justera avståndet mellan ikonerna för mindre skärmar */
+    .menu-icons {
+        margin-right: 10px;
+        /* Lägg till marginal till höger av hela .menu-icons */
+    }
+
+    /* Placera förstoringsglaset och shoppingbagen längst till höger */
+    .right-icons {
+        margin-left: auto;
+        /* Låt dessa ikoner flytta längst till höger */
     }
 }
 
 main {
-    padding-top: 80px;
+    margin-top: 30px;
     /* Anpassa topputfyllnaden beroende på headerhöjd */
     text-align: center;
 }
