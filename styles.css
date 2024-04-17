@@ -235,7 +235,36 @@ footer {
     /* Adjust the left and right padding */
 }
 
+.headline {
+    color: #5e5e5e;
+    padding: 10px;
+    font-size: 12.5px;
+    font-weight: bold;
+}
+
 .my-line {
     border-top: 1px solid #bababa;
     width: 100%;
+}
+
+.containerfooter {
+    display: flex;
+    /* Använd flexbox för layout */
+}
+
+.column {
+    flex: 1;
+    /* Dela utrymmet jämnt mellan kolumnerna */
+    padding: 5px;
+    margin-right: 10px;
+    /* Lägg till mellanrum mellan kolumnerna */
+}
+
+/* Stilar för .headline-element */
+.headline {
+    margin-bottom: 5px;
+}
+
+.blue-text {
+    color: blue;
 }
