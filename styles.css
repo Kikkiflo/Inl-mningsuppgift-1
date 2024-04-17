@@ -8,11 +8,12 @@ html {
     /* Grundläggande fontstorlek */
 }
 
-/* Grundläggande stil för header */
+/* Ta bort padding från header */
 header {
-    background-color: #474747;
-    color: #c4c4c4;
-    padding: 20px;
+    background-color: #212121;
+    color: #a8a8a8;
+    padding: 0;
+    /* Ta bort all padding */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,22 +84,178 @@ label {
     }
 }
 
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* Dölj eventuell överflöd av bilden */
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    /* Få bilden att täcka hela förälderelementet */
+    height: auto;
+}
+
+.textblock {
+    position: absolute;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.textblock-vision {
+    bottom: 0;
+    color: #ffffff;
+}
+
+.textblock-iphone {
+    top: 0;
+    color: #ffffff;
+}
+
+.textblock-iphone p.series-text {
+    color: red;
+    font-size: 12px;
+}
+
+.textblock-macbook {
+    top: 0;
+    color: #000000;
+}
+
+.textblock p {
+    margin: 0;
+}
+
+.textblock span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textblock span p {
+    margin: 0 10px;
+}
+
+.larger-text {
+    font-size: 24px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-white {
+    color: #000000;
+    /* Svart textfärg */
+    background-color: #ffffff;
+    /* Vit bakgrundsfärg */
+}
+
+.button-transparent {
+    color: #ffffff;
+    /* Vit textfärg */
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    /* Vit kant */
+}
+
+.button-blue {
+    color: #ffffff;
+    background-color: #261ffb;
+}
+
+.button-transparentblue {
+    color: #261ffb;
+    background-color: transparent;
+    border: 1px solid #261ffb;
+}
+
+.image-gallery .column {
+    position: relative;
+}
+
+.image-gallery .column .textblock {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.image-gallery .column .textblock p {
+    margin-bottom: 10px;
+    /* Avstånd mellan textlinjerna */
+}
+
+.other-image-container .textblock {
+    top: 10px;
+}
+
+.conference-image-container .textblock {
+    bottom: 10px;
+}
+
 main {
-    margin-top: 30px;
-    /* Anpassa topputfyllnaden beroende på headerhöjd */
+    margin-top: 0;
+    /* Ta bort toppmarginalen */
     text-align: center;
 }
 
 main img {
+    display: block;
+    /* Säkerställ att bilden är ett blockelement */
     max-width: 100%;
     height: auto;
+    margin: 0;
+    /* Ta bort alla marginaler från bilden */
     border: none;
     outline: none;
     box-sizing: border-box;
 }
 
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 footer {
-    background-color: #333;
+    background-color: #a5a5a5;
     color: #fff;
     padding: 20px;
 }

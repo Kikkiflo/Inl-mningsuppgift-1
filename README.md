@@ -1,2 +1,2 @@
-Jag har valt apple.se --> https://www.apple.com/se/
+Jag har valt apple.com --> https://www.apple.com
 Kristina Florentin
