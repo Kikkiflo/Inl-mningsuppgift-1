@@ -1,86 +1,64 @@
-/* Återställ standardstil för HTML och body */
 body,
 html {
     margin: 0;
     padding: 0;
     font-family: "SF Pro", sans-serif;
     font-size: 11px;
-    /* Grundläggande fontstorlek */
 }
 
-/* Ta bort padding från header */
 header {
     background-color: #212121;
     color: #a8a8a8;
     padding: 0;
-    /* Ta bort all padding */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Stil för menyraden */
 .menu-icons,
 .menu-container {
     display: flex;
     align-items: center;
 }
 
-/* Stil för text i meny */
 .menu-container p {
     margin-right: 4vw;
-    /* Använd vw för relativt avstånd */
 }
 
-/* Stil för ikoner i meny */
 .menu-icons i {
     margin-right: 1vw;
-    /* Använd vw för relativt avstånd */
 }
 
-/* Stil för hamburgermeny */
 .hamburger-menu {
     display: none;
-    /* Dölj hamburgermenyn som standard */
 }
 
-/* Stil för label (hamburger-ikonen) */
 label {
     cursor: pointer;
     color: #fff;
     font-size: 15px;
 }
 
-/* Mediaförfrågan för mindre skärmar */
 @media (max-width: 768px) {
 
-    /* Visa hamburgermeny när skärmen är mindre än 768px */
     .hamburger-menu {
         display: block;
-        /* Visa hamburgermeny på mindre skärmar */
     }
 
-    /* Dölj textmenyn när hamburgermenyn visas */
     .menu-container {
         display: none;
     }
 
-    /* Justera header layout för mindre skärmar */
     header {
         justify-content: space-between;
-        /* Placera element till vänster och höger */
     }
 
-    /* Justera avståndet mellan ikonerna för mindre skärmar */
     .menu-icons {
         margin-right: 10px;
-        /* Lägg till marginal till höger av hela .menu-icons */
     }
 
-    /* Placera förstoringsglaset och shoppingbagen längst till höger */
     .right-icons {
         margin-left: auto;
-        /* Låt dessa ikoner flytta längst till höger */
     }
 }
 
@@ -89,13 +67,11 @@ label {
     position: relative;
     width: 100%;
     overflow: hidden;
-    /* Dölj eventuell överflöd av bilden */
 }
 
 .image-container img {
     display: block;
     width: 100%;
-    /* Få bilden att täcka hela förälderelementet */
     height: auto;
 }
 
@@ -151,7 +127,7 @@ label {
 }
 
 .button-container {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .button {
@@ -164,17 +140,13 @@ label {
 
 .button-white {
     color: #000000;
-    /* Svart textfärg */
     background-color: #ffffff;
-    /* Vit bakgrundsfärg */
 }
 
 .button-transparent {
     color: #ffffff;
-    /* Vit textfärg */
     background-color: transparent;
     border: 1px solid #ffffff;
-    /* Vit kant */
 }
 
 .button-blue {
@@ -201,7 +173,6 @@ label {
 
 .image-gallery .column .textblock p {
     margin-bottom: 10px;
-    /* Avstånd mellan textlinjerna */
 }
 
 .other-image-container .textblock {
@@ -214,17 +185,14 @@ label {
 
 main {
     margin-top: 0;
-    /* Ta bort toppmarginalen */
     text-align: center;
 }
 
 main img {
     display: block;
-    /* Säkerställ att bilden är ett blockelement */
     max-width: 100%;
     height: auto;
     margin: 0;
-    /* Ta bort alla marginaler från bilden */
     border: none;
     outline: none;
     box-sizing: border-box;
@@ -255,7 +223,19 @@ img {
 }
 
 footer {
-    background-color: #a5a5a5;
-    color: #fff;
-    padding: 20px;
+    background-color: #f7f6f6;
+    color: #bababa;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.footer {
+    padding-left: 100px;
+    padding-right: 100px;
+    /* Adjust the left and right padding */
+}
+
+.my-line {
+    border-top: 1px solid #bababa;
+    width: 100%;
 }
