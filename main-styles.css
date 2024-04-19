@@ -159,20 +159,3 @@ img {
     height: auto;
     display: block;
 }
-
-@media (max-width: 50.97rem) {
-    .row {
-        flex-direction: column;
-    }
-
-    .textblock {
-        max-width: 90%;
-        padding: 1rem;
-        position: relative;
-        width: 100%;
-        max-width: 100%;
-        text-align: center;
-        padding: 0.625rem;
-        box-sizing: border-box;
-    }
-}
