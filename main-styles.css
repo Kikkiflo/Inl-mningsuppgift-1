@@ -1,3 +1,5 @@
+/* Main styles */
+
 .image-container {
     position: relative;
     width: 100%;
@@ -158,21 +160,19 @@ img {
     display: block;
 }
 
-.column-footer {
-    flex: 1;
-}
+@media (max-width: 50.97rem) {
+    .row {
+        flex-direction: column;
+    }
 
-.headline {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-}
-
-.blue-text {
-    color: blue;
-}
-
-.right-text {
-    float: right;
-    margin-left: 1.250rem;
+    .textblock {
+        max-width: 90%;
+        padding: 1rem;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0.625rem;
+        box-sizing: border-box;
+    }
 }

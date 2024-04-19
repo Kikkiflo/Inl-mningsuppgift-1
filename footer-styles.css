@@ -29,3 +29,59 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
+
+.column-footer {
+    flex: 1;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.right-text {
+    float: right;
+    margin-left: 1.250rem;
+}
+
+.headline {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+@media (max-width: 57.85rem) {
+    .containerfooter {
+        flex-direction: column;
+    }
+
+    .headline {
+        color: #5e5e5e;
+        font-size: 0.78125rem;
+        font-weight: bold;
+        margin: 0;
+        border-bottom: 0.0625rem solid #ddd;
+        position: relative;
+        text-align: left;
+        padding: 0.3125rem 0.625rem;
+    }
+
+    .column-footer p {
+        display: none;
+    }
+
+    .column-footer {
+        margin-bottom: 0;
+    }
+
+    .headline:after {
+        content: '\f078';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        font-size: 0.5rem;
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        color: #5e5e5e;
+    }
+}
