@@ -1,0 +1,29 @@
+footer {
+    background-color: #f7f6f6;
+    color: #bababa;
+    padding: 0.625rem;
+    font-size: 0.75rem;
+}
+
+.footer {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+}
+
+.headline {
+    color: #5e5e5e;
+    padding: 0.625rem;
+    font-size: 0.78125rem;
+    font-weight: bold;
+    padding: 0.625rem;
+}
+
+.my-line {
+    border-top: 0.0625rem solid #bababa;
+    width: 100%;
+}
+
+.containerfooter {
+    display: flex;
+    flex-wrap: wrap;
+}

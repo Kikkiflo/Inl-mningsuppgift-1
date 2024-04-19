@@ -1,0 +1,149 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "SF Pro", sans-serif;
+    font-size: 0.9rem;
+}
+
+header {
+    background-color: #212121;
+    color: #a8a8a8;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Header classes */
+
+.menu-icons,
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-container p {
+    margin-right: 4vw;
+}
+
+.menu-icons i {
+    margin-right: 1vw;
+}
+
+.apple-icon {
+    padding-left: 1rem;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.9375rem;
+    padding-right: 1rem;
+}
+
+@media (max-width: 61.875rem) {
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .menu-icons {
+        margin-right: 0.625rem;
+    }
+
+    .right-icons {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 57.85rem) {
+    .containerfooter {
+        flex-direction: column;
+    }
+
+    .headline {
+        color: #5e5e5e;
+        font-size: 0.78125rem;
+        font-weight: bold;
+        margin: 0;
+        border-bottom: 0.0625rem solid #ddd;
+        position: relative;
+        text-align: left;
+        padding: 0.3125rem 0.625rem;
+    }
+
+    .column-footer p {
+        display: none;
+    }
+
+    .column-footer {
+        margin-bottom: 0;
+        /* Justera avståndet mellan kolumner för mindre skärmar */
+    }
+
+    .headline:after {
+        content: '\f078';
+        /* Unicode för Font Awesome-ikonen för pil nedåt */
+        font-family: 'Font Awesome 5 Free';
+        /* Använd Font Awesome-ikoner */
+        font-weight: 900;
+        /* Använd rätt fontvikt för ikonen */
+        font-size: 0.7rem;
+        /* Justera storleken på ikonen efter behov */
+        position: absolute;
+        top: 50%;
+        /* Placera den vertikalt i mitten av kolumnen */
+        right: 1rem;
+        /* Placera den längst till höger */
+        transform: translateY(-50%);
+        /* Justera för att centrera vertikalt */
+        color: #5e5e5e;
+        /* Ange färgen för ikonen */
+        cursor: pointer;
+        /* Visa pekhand när du hovrar över ikonen */
+    }
+}
+
+@media (max-width: 50.97rem) {
+    .row {
+        flex-direction: column;
+        /* Visa en bild per rad vid mindre skärmstorlekar */
+    }
+
+    .textblock {
+        max-width: 90%;
+        /* Justera maxbredden för mindre skärmar */
+        padding: 1rem;
+        /* Minska kudden för texten */
+        position: relative;
+        /* Ändra till relativ position för att texten inte ska försvinna */
+        width: 100%;
+        /* Bredden ska anpassas till behovet */
+        max-width: 100%;
+        /* Säkerställ att textblocket inte är bredare än bilden */
+        text-align: center;
+        /* Centrera texten inom bildblocket */
+        padding: 0.625rem;
+        /* Lägg till lämplig kudde för text */
+        box-sizing: border-box;
+        /* Säkerställ att padding räknas in i bredden */
+    }
+}

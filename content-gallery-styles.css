@@ -1,68 +1,3 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: "SF Pro", sans-serif;
-    font-size: 11px;
-}
-
-header {
-    background-color: #212121;
-    color: #a8a8a8;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu-icons,
-.menu-container {
-    display: flex;
-    align-items: center;
-}
-
-.menu-container p {
-    margin-right: 4vw;
-}
-
-.menu-icons i {
-    margin-right: 1vw;
-}
-
-.hamburger-menu {
-    display: none;
-}
-
-label {
-    cursor: pointer;
-    color: #fff;
-    font-size: 15px;
-}
-
-@media (max-width: 768px) {
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .menu-container {
-        display: none;
-    }
-
-    header {
-        justify-content: space-between;
-    }
-
-    .menu-icons {
-        margin-right: 10px;
-    }
-
-    .right-icons {
-        margin-left: auto;
-    }
-}
-
-
 .image-container {
     position: relative;
     width: 100%;
@@ -77,15 +12,16 @@ label {
 
 .textblock {
     position: absolute;
-    font-size: 20px;
+    font-size: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    padding: 20px;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     line-height: 1.5;
+    max-width: 80%;
 }
 
 .textblock-vision {
@@ -100,7 +36,7 @@ label {
 
 .textblock-iphone p.series-text {
     color: red;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .textblock-macbook {
@@ -119,21 +55,21 @@ label {
 }
 
 .textblock span p {
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 
 .larger-text {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .button-container {
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    border-radius: 15px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.7rem;
     text-decoration: none;
     cursor: pointer;
 }
@@ -146,7 +82,7 @@ label {
 .button-transparent {
     color: #ffffff;
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border: 0.0625rem solid #ffffff;
 }
 
 .button-blue {
@@ -157,7 +93,7 @@ label {
 .button-transparentblue {
     color: #261ffb;
     background-color: transparent;
-    border: 1px solid #261ffb;
+    border: 0.0625rem solid #261ffb;
 }
 
 .image-gallery .column {
@@ -168,19 +104,20 @@ label {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    max-width: 80%;
+    /* Anpassa textblockens bredd */
 }
 
 .image-gallery .column .textblock p {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .other-image-container .textblock {
-    top: 10px;
+    top: 0.625rem;
 }
 
 .conference-image-container .textblock {
-    bottom: 10px;
+    bottom: 0.625rem;
 }
 
 main {
@@ -203,7 +140,7 @@ main img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .row {
@@ -213,7 +150,7 @@ main img {
 }
 
 .column {
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 img {
@@ -222,49 +159,24 @@ img {
     display: block;
 }
 
-footer {
-    background-color: #f7f6f6;
-    color: #bababa;
-    padding: 10px;
-    font-size: 12px;
-}
-
-.footer {
-    padding-left: 100px;
-    padding-right: 100px;
-    /* Adjust the left and right padding */
-}
-
-.headline {
-    color: #5e5e5e;
-    padding: 10px;
-    font-size: 12.5px;
-    font-weight: bold;
-}
-
-.my-line {
-    border-top: 1px solid #bababa;
-    width: 100%;
-}
-
-.containerfooter {
-    display: flex;
-    /* Använd flexbox för layout */
-}
-
-.column {
+.column-footer {
     flex: 1;
-    /* Dela utrymmet jämnt mellan kolumnerna */
-    padding: 5px;
-    margin-right: 10px;
-    /* Lägg till mellanrum mellan kolumnerna */
 }
 
-/* Stilar för .headline-element */
 .headline {
-    margin-bottom: 5px;
+    margin: 0;
+    /* Nollställ alla marginaler */
+    padding: 0;
+    /* Nollställ alla utfyllnader */
+    text-align: left;
+    /* Justera texten till vänster */
 }
 
 .blue-text {
     color: blue;
+}
+
+.right-text {
+    float: right;
+    margin-left: 1.250rem;
 }
