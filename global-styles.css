@@ -6,6 +6,8 @@ html {
     font-size: 0.9rem;
 }
 
+/* Header classes */
+
 header {
     background-color: #212121;
     color: #a8a8a8;
@@ -19,8 +21,6 @@ header {
     width: 100%;
     z-index: 999;
 }
-
-/* Header classes */
 
 .menu-icons,
 .menu-container {
@@ -50,6 +50,8 @@ label {
     font-size: 0.9375rem;
     padding-right: 1rem;
 }
+
+/* Media classes */
 
 @media (max-width: 61.875rem) {
 
@@ -96,54 +98,34 @@ label {
 
     .column-footer {
         margin-bottom: 0;
-        /* Justera avståndet mellan kolumner för mindre skärmar */
     }
 
     .headline:after {
         content: '\f078';
-        /* Unicode för Font Awesome-ikonen för pil nedåt */
         font-family: 'Font Awesome 5 Free';
-        /* Använd Font Awesome-ikoner */
-        font-weight: 900;
-        /* Använd rätt fontvikt för ikonen */
-        font-size: 0.7rem;
-        /* Justera storleken på ikonen efter behov */
+        font-weight: 700;
+        font-size: 0.5rem;
         position: absolute;
         top: 50%;
-        /* Placera den vertikalt i mitten av kolumnen */
         right: 1rem;
-        /* Placera den längst till höger */
         transform: translateY(-50%);
-        /* Justera för att centrera vertikalt */
         color: #5e5e5e;
-        /* Ange färgen för ikonen */
-        cursor: pointer;
-        /* Visa pekhand när du hovrar över ikonen */
     }
 }
 
 @media (max-width: 50.97rem) {
     .row {
         flex-direction: column;
-        /* Visa en bild per rad vid mindre skärmstorlekar */
     }
 
     .textblock {
         max-width: 90%;
-        /* Justera maxbredden för mindre skärmar */
         padding: 1rem;
-        /* Minska kudden för texten */
         position: relative;
-        /* Ändra till relativ position för att texten inte ska försvinna */
         width: 100%;
-        /* Bredden ska anpassas till behovet */
         max-width: 100%;
-        /* Säkerställ att textblocket inte är bredare än bilden */
         text-align: center;
-        /* Centrera texten inom bildblocket */
         padding: 0.625rem;
-        /* Lägg till lämplig kudde för text */
         box-sizing: border-box;
-        /* Säkerställ att padding räknas in i bredden */
     }
 }

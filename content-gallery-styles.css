@@ -105,7 +105,6 @@
     left: 50%;
     transform: translateX(-50%);
     max-width: 80%;
-    /* Anpassa textblockens bredd */
 }
 
 .image-gallery .column .textblock p {
@@ -165,11 +164,8 @@ img {
 
 .headline {
     margin: 0;
-    /* Nollställ alla marginaler */
     padding: 0;
-    /* Nollställ alla utfyllnader */
     text-align: left;
-    /* Justera texten till vänster */
 }
 
 .blue-text {
